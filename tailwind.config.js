@@ -7,10 +7,11 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    // "./node_modules/flowbite/**/*.js",
+    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx,vue}',
+    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
   ],
   
-  darkMode: 'class',  
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -55,11 +56,12 @@ export default {
     },
     colors:{
       'mygreen': '#58C3A7',
+      'mygreenH': '#309178'//for hover 
       
     }
   },
   plugins: [
-    // require('flowbite/plugin')
+    require('flowbite/plugin')
 
   ],
 }

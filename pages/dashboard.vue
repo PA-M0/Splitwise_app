@@ -1,6 +1,4 @@
 <template>
- 
-
 
   <div class="container m-auto">
     <div style="border-style: solid;border-radius: 5px; border-width: 1px; background-color: #ededee;">
@@ -25,8 +23,8 @@
           </svg>
           <div class="text-left rtl:text-right">
             <div class="mb-1 text-xs">Download on the</div>
-            <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
-          </div>
+            <div class="mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+          </div> 
         </a>
         <a href="#"
           class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
