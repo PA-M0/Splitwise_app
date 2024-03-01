@@ -12,10 +12,16 @@
   "devDependencies": {
     "@cssninja/nuxt-toaster": "^0.3.12",
     "@nuxt/typescript-build": "^3.0.2",
+    "@nuxtjs/supabase": "^1.1.6",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@nuxtjs/vuetify": "^1.12.3",
+    "@sidebase/nuxt-auth": "^0.6.7",
     "@types/node": "^20.11.10",
     "autoprefixer": "^10.4.17",
+    "mongoose": "^8.2.0",
+    "mongoose-bcrypt": "^1.11.0",
     "nuxt": "^3.9.3",
+    "nuxt-icon": "^0.6.8",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "ts-loader": "^9.5.1",
@@ -26,8 +32,11 @@
     "vuetify": "^3.4.0-beta.1"
   },
   "dependencies": {
+    "@nuxtjs/auth-next": "5.0.0-1667386184.dfbbb54",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/toast": "^3.3.1",
     "@pinia/nuxt": "^0.5.1",
+    "next-auth": "4.22.5",
     "pinia": "^2.1.7",
     "sass": "^1.70.0"
   },

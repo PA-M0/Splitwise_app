@@ -1,5 +1,4 @@
 <template>
-
   <div class="container m-auto">
     <div style="border-style: solid;border-radius: 5px; border-width: 1px; background-color: #ededee;">
       <h1 style="font-size: 24px;" class="text-center p-3 text-dark">
@@ -11,7 +10,9 @@
     <div
       class="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
       <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Wellcome to SplitWise app</h5>
-      <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in voluptatibus esse alias facilis perspiciatis quo beatae ratione illo molestias, ut necessitatibus eos tenetur impedit repellendus reiciendis ab! Ipsa, natus?</p>
+      <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quas in voluptatibus esse alias facilis perspiciatis quo beatae ratione illo molestias, ut
+        necessitatibus eos tenetur impedit repellendus reiciendis ab! Ipsa, natus?</p>
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a href="#"
           class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
@@ -24,7 +25,7 @@
           <div class="text-left rtl:text-right">
             <div class="mb-1 text-xs">Download on the</div>
             <div class="mt-1 font-sans text-sm font-semibold">Mac App Store</div>
-          </div> 
+          </div>
         </a>
         <a href="#"
           class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
@@ -41,19 +42,16 @@
         </a>
       </div>
     </div>
-   
 
-  
+
+
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-  
 </template>
 
 
 
-<script>
+<script lang="ts" setup>
+
 
 </script>
