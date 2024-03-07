@@ -1,8 +1,33 @@
 <template>
+  <header>
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <div class="flex justify-between items-center mx-auto max-w-screen-xl">
+
+
+
+        <form>
+          <button type="submit" class="p-1.5 ">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+
+
+
+        <p class="text-purple-600 font-medium">Get Splitwize Pro!</p>
+
+
+
+      </div>
+    </nav>
+  </header>
   <div class="container m-auto">
     <div style="border-style: solid;border-radius: 5px; border-width: 1px; background-color: #ededee;">
       <h1 style="font-size: 24px;" class="text-center p-3 text-dark">
-        <img src="../assets/images/user.png" alt="" class="m-1" style="display: inline-block;" width="20">Dashboard
+        <img src="../assets/images/user.png" alt="" class="m-1" style="display: inline-block;" width="20">Account
       </h1>
 
     </div>
@@ -15,7 +40,7 @@
         necessitatibus eos tenetur impedit repellendus reiciendis ab! Ipsa, natus?</p>
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a href="#"
-          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+          class="w-full sm:w-auto bg-mygreenH hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
           <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
             <path fill="currentColor"
@@ -28,7 +53,7 @@
           </div>
         </a>
         <a href="#"
-          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+          class="w-full sm:w-auto bg-purple-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
           <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play"
             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor"
@@ -42,11 +67,59 @@
         </a>
       </div>
     </div>
+    <section class="p-3  ">
+      <h2 class="font-medium text- py-3">settings</h2>
+      <div class="flex items-center p-2 gap-4">
+        <img class="w-14 h-14 rounded-full" src="../assets/images/nav/user.png" alt="">
+        <div class="font-normal ">
+          <div>parsa shafagh</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">example@gmail.com</div>
+        </div>
+      </div>
+      <hr>
+      <div class="grid grid-cols-1 p-1 divide-y">
+        <div class="p-3 text-base ">Scan code</div>
+        <div class="p-3">SplitWise Pro</div>
 
+      </div>
+      <h2 class="font-medium text- py-3">Perferences</h2>
+      <div class="grid grid-cols-1 p-1 divide-y">
+        <div class="p-3 text-base ">Notifications</div>
+        <div class="p-3">Passcode</div>
+
+
+      </div>
+
+      <h2 class="font-medium text- py-3">Feedback</h2>
+      <div class="grid grid-cols-1 p-1 divide-y">
+        <div class="p-3 text-base ">Rate Splitwise</div>
+        <div class="p-3">Contact us</div>
+
+
+      </div>
+    </section>
+    <section>
+      <button class="text-mygreenH block mx-auto">Log out</button>
+      <div class="text-gray-500 mx-auto w-[200px]">
+        <p class="mx-auto text-sm text-center">Made with Love Parsa Shafagh (PA_M0)
+        </p>
+        <div class="flex justify-between">
+          <span class="mx-auto text-sm text-center text-blue-400">
+            <a href="https://github.com/PA-M0"></a>github
+          </span>
+          <span class="mx-auto text-sm text-center text-blue-400">
+            <a href="#"></a>email
+          </span>
+        </div>
+
+
+      </div>
+    </section>
+    <br><br><br><br><br>
 
 
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+
 </template>
 
 

@@ -1,7 +1,32 @@
 
 <template>
    
+   <header>
+      <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex justify-between items-center mx-auto max-w-screen-xl">
 
+
+
+          <form>
+            <button type="submit" class="p-1.5 ">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </form>
+
+
+
+          <a href="#" class="text-mygreenH  dark:text-white hover:text-green-100">Add friends</a>
+
+
+
+        </div>
+      </nav>
+    </header>
 
     
  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
