@@ -55,8 +55,13 @@
                   password?</a>
               </div>
 
-              <button  disabled type="button" style="background-color: #2463EB;"
-                class="w-full text-white bg-dark hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+              
+
+              <button  type="submit" v-if="isLoading"
+                class="w-full text-white bg-mygreen hover:bg-mygreenH focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
+                in</button>
+                <button disabled type="button" v-else="isLoading"
+                class="w-full  text-white bg-mygreenH focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                 <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin"
                   viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -69,9 +74,6 @@
                 Loading...
               </button>
 
-              <button  type="submit"
-                class="w-full text-white bg-mygreen hover:bg-mygreenH focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
-                in</button>
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet? <a href="#"
                   class="font-medium text-mygreenH hover:underline dark:text-primary-500">Sign up</a>
