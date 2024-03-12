@@ -17,7 +17,8 @@
           </svg>
           <span class="sr-only">Info</span>
           <div>
-            <span class="font-medium">Somethis went wrong.</span> please change a few things up and try submitting again.
+            <span class="font-medium">Something went wrong.</span> please change a few things up and try submitting
+            again.
           </div>
         </div>
         <div
@@ -26,9 +27,10 @@
             <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Sign in to your account
             </h1>
-            <form class="space-y-4 md:space-y-6" @submit.prevent="submitForm()" action="#">
+            <form class="space-y-4 md:space-y-6" @submit.prevent="signUpNewUser()" action="#">
               <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                  email</label>
                 <input type="text" v-model="email" name="email" id="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-mygreen focus:border-mygreen block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="name@company.com" required="">
@@ -55,12 +57,12 @@
                   password?</a>
               </div>
 
-              
 
-              <button  type="submit" v-if="isLoading"
+
+              <button type="submit" v-if="isLoading" @click="signUpNewUser()"
                 class="w-full text-white bg-mygreen hover:bg-mygreenH focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign
                 in</button>
-                <button disabled type="button" v-else="isLoading"
+              <button disabled type="button" v-else="isLoading"
                 class="w-full  text-white bg-mygreenH focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                 <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin"
                   viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,18 +77,31 @@
               </button>
 
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                Don’t have an account yet? <a href="#"
-                  class="font-medium text-mygreenH hover:underline dark:text-primary-500">Sign up</a>
+                Don’t have an account yet? <nuxt-link to="/signup"
+                  class="font-medium text-mygreenH hover:underline dark:text-primary-500">Sign up</nuxt-link>
               </p>
+
             </form>
           </div>
         </div>
       </div>
     </section>
+
   </div>
 </template>
-<script>
+<script setup >
+import { supabase } from "@/plugins/supabase.ts"
+const signUp = async() =>{
+  console.log("yess")
+  let {data, error } = await supabase.auth.signUp({
+    email:'parsa.shafagh.1382@gmail.com',
+    password:'LSJRFklsmfj12323@#@#@'
+  })
+}
+</script>
+<script >
 import axios from 'axios';
+// import { supabase } from '@/plugins/supabase'
 definePageMeta({
   layout: 'custom'
 })
@@ -94,17 +109,50 @@ export default {
   data() {
     return {
       visible: false,
-      formData: {
-        email: '',
-        password: ''
-      },
+
+      email: '',
+      password: '',
+
       showAlert: false,
-      isLoading:true
+      isLoading: true,
+      //   client: useSupabaseClient(),
+      // successMsg:'',
+      // errorMsg:'',
     };
   },
   methods: {
+    async signUpNewUser() {
+  const { data, error } = await supabase.auth.signUp({
+    email: 'example@email.com',
+    password: 'example-password',
+    options: {
+      emailRedirectTo: 'https://example.com/welcome',
+    },
+  })
+},
+    async signIn() {
+      try {
+        console.log("aa")
+        let { data, error } = await supabase.auth.signInWithOtp({
+          email: "parsa.shafagh.1382@gmail.com"
+        })
+
+        // if (error) {
+        //   console.error(error.message)
+        // } else {
+        //   console.log('User signed in successfully:', user)
+        //   console.log('Session:', session)
+        // }
+      } catch (error) {
+        console.error('Sign in error:', error.message)
+      }
+    },
+    // const login = async()=>{
+
+    // }
     async submitForm() {
       try {
+        console.log(client);
         this.isLoading = true
         await $fetch('https://fakestoreapi.com/auth/login', {
           method: 'POST',
@@ -115,7 +163,7 @@ export default {
         })
           .then(json => console.log(json))
           .then(
-            this.isLoading=false,
+            this.isLoading = false,
             this.$router.push('/dashboard')
           )
 

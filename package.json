@@ -12,7 +12,7 @@
   "devDependencies": {
     "@cssninja/nuxt-toaster": "^0.3.12",
     "@nuxt/typescript-build": "^3.0.2",
-    "@nuxtjs/supabase": "^1.1.6",
+    "@nuxtjs/supabase": "^1.1.7",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@nuxtjs/vuetify": "^1.12.3",
     "@sidebase/nuxt-auth": "^0.6.7",
@@ -36,6 +36,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/toast": "^3.3.1",
     "@pinia/nuxt": "^0.5.1",
+    "@supabase/supabase-js": "^2.39.7",
     "flowbite": "^2.3.0",
     "next-auth": "4.22.5",
     "pinia": "^2.1.7",

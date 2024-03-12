@@ -13,7 +13,7 @@
                             class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                             Create an account
                         </h1>
-                        <form class="space-y-4 md:space-y-6" @submit.prevent="signUp" action="#">
+                        <form class="space-y-4 md:space-y-6" @submit.prevent="signUp()" action="#">
                             <div>
                                 <label for="first_name"
                                     class="block  text-sm font-medium text-gray-900 dark:text-white">First name</label>
@@ -23,7 +23,8 @@
                             </div>
                             <div>
                                 <label for="last_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
+                                    name</label>
                                 <input type="text" id="last_name"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Daei" v-model="last_name" required>
@@ -35,9 +36,10 @@
                                         number</label>
                                     <input type="text" id="phone" v-model="phone_number"
                                         class="bg-gray-50 mb-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="123-45-678"  required>
+                                        placeholder="123-45-678" required>
                                 </div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                <label for="email"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                     email</label>
                                 <input type="email" name="email" id="email" v-model="email"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -54,8 +56,9 @@
 
                             <button v-if="isLoading" disabled type="button" style="background-color: #2463EB;"
                                 class="w-full text-white bg-dark hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                <svg aria-hidden="true" role="status" class="inline w-4 h-4 me-3 text-white animate-spin"
-                                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg aria-hidden="true" role="status"
+                                    class="inline w-4 h-4 me-3 text-white animate-spin" viewBox="0 0 100 101"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
                                         fill="#E5E7EB" />
@@ -66,7 +69,7 @@
                                 Loading...
                             </button>
 
-                            <button v-else type="submit" 
+                            <button v-else type="submit"
                                 class="w-full text-white bg-mygreen bg-dark hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create
                                 an account</button>
 
@@ -84,7 +87,7 @@
             </div>
         </section>
     </div>
-    
+
 </template>
 
 
@@ -93,7 +96,7 @@
 import axios from 'axios'
 
 definePageMeta({
-  layout: 'custom'
+    layout: 'custom'
 })
 
 export default {
@@ -106,86 +109,102 @@ export default {
             email: '',
             password: '',
             dataa: null, // To store the fetched data
+            client: useSupabaseClient(),
+            errMsg:null,
+            successMsg:null,
 
         };
     },
     methods: {
-        
-            getData() {
-                // Replace the URL with your actual API endpoint
-                const apiUrl = 'https://jsonplaceholder.typicode.com/posts'
-
-                // Make a GET request using Axios
-                axios.get(apiUrl)
-                    .then((response) => {
-                        // Handle the success response
-                        console.log('Data fetched successfully:', response.data);
-
-                        // Store the fetched data in the component's data property
-                        this.data = response.data;
-                       
-
-                    })
-                    .catch((error) => {
-                        // Handle the error response
-                        console.error('Failed to fetch data:', error.response ? error.response.data : error.message);
-                    });
-            },
-       
-        signUp() {
-            const router = useRouter()
-            const url = 'https://jsonplaceholder.typicode.com/posts';
-
-            this.isLoading = true;
-            axios.post(url, {
-                email: this.email,
-                phone_number: this.phone_number,
-                first_name: this.first_name,
-                last_name: this.last_name,
-                password: this.password,
-            }
-                , {
-                    timeout: 5000, // set timeout in milliseconds (adjust as needed)
-                }
-                ,{
-                    headers: {
-                'Content-Type': 'application/json',
-               
-                // Add any additional headers if needed
-            },
-                }
-                )
-                .then((response) => {
-                    // Handle the success response
-                    console.log('Signup successful:', response.data);
-                    console.log('Token:', response.data.token);
-
-                    // Redirect or perform other actions based on success
-                    //  const { access_token, refresh_token, message } = response.data;
-
-                    // Store tokens in Vuex or local storage for future requests
-                    //this.$store.commit('setTokens', { access_token, refresh_token });
-
-                    // Redirect to another page after successful sign-in if needed
-                    this.$router.push('/dashboard');
-                    this.isLoading = false;
-
-
-                })
-                .catch((error) => {
-                    // Handle the error response
-                    console.error('Signup failed:', error);
-
-                    if (error.response && error.response.data) {
-                        console.error('Error data:', error.response.data);
-                        // Display error messages or perform other actions based on error
-                    }                    // Display error messages or perform other actions based on error
-                    this.isLoading = false;
+        async signUp(){
+            try {
+              const { data, error } = await client.auth.signup({
+                    email: email.value,
+                    password: password.value,
                 });
+                if(error) throw error;
+                this.successMsg.value = "Check your email to confirm your account."
+            } catch (error) {
+                this.errorMsg.value = error.message;
+
+            }
+},
+
+getData() {
+    // Replace the URL with your actual API endpoint
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts'
+
+    // Make a GET request using Axios
+    axios.get(apiUrl)
+        .then((response) => {
+            // Handle the success response
+            console.log('Data fetched successfully:', response.data);
+
+            // Store the fetched data in the component's data property
+            this.data = response.data;
+
+
+        })
+        .catch((error) => {
+            // Handle the error response
+            console.error('Failed to fetch data:', error.response ? error.response.data : error.message);
+        });
+},
+
+        // signUp() {
+        //     const router = useRouter()
+        //     const url = 'https://jsonplaceholder.typicode.com/posts';
+
+        //     this.isLoading = true;
+        //     axios.post(url, {
+        //         email: this.email,
+        //         phone_number: this.phone_number,
+        //         first_name: this.first_name,
+        //         last_name: this.last_name,
+        //         password: this.password,
+        //     }
+        //         , {
+        //             timeout: 5000, // set timeout in milliseconds (adjust as needed)
+        //         }
+        //         ,{
+        //             headers: {
+        //         'Content-Type': 'application/json',
+
+        //         // Add any additional headers if needed
+        //     },
+        //         }
+        //         )
+        //         .then((response) => {
+        //             // Handle the success response
+        //             console.log('Signup successful:', response.data);
+        //             console.log('Token:', response.data.token);
+
+        //             // Redirect or perform other actions based on success
+        //             //  const { access_token, refresh_token, message } = response.data;
+
+        //             // Store tokens in Vuex or local storage for future requests
+        //             //this.$store.commit('setTokens', { access_token, refresh_token });
+
+        //             // Redirect to another page after successful sign-in if needed
+        //             this.$router.push('/dashboard');
+        //             this.isLoading = false;
+
+
+        //         })
+        //         .catch((error) => {
+        //             // Handle the error response
+        //             console.error('Signup failed:', error);
+
+        //             if (error.response && error.response.data) {
+        //                 console.error('Error data:', error.response.data);
+        //                 // Display error messages or perform other actions based on error
+        //             }                    // Display error messages or perform other actions based on error
+        //             this.isLoading = false;
+        //         });
 
 
 
-        },
+        // },
     },
 };
 </script>

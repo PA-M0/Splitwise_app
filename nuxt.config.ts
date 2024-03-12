@@ -20,9 +20,12 @@ export default defineNuxtConfig({
   modules: [
       '@cssninja/nuxt-toaster',
       '@pinia/nuxt',
-        
+      '@nuxtjs/supabase',
       // '@sidebase/nuxt-auth',
    ],
+   plugins: [
+    '~/plugins/supabase.ts'
+  ]
  
 // runtimeConfig: {
 //   mongoUrl: process.env.MONGO_URL,
@@ -30,9 +33,5 @@ export default defineNuxtConfig({
 // nitro: {
 //   plugins: ["~/server/index.ts"],
 // },
-
-  
-   
-   
 
 })
