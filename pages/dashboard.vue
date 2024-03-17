@@ -99,10 +99,16 @@
       </div>
     </section>
     <section>
-      <button class="text-mygreenH block mx-auto">Log out</button>
+      
+
+      <div>
+        <nuxt-btn class="text-mygreenH block text-center cursor-pointer" @click="signOut()" :disabled="loading">Log
+          Out</nuxt-btn>
+      </div>
       <div class="text-gray-500 mx-auto w-[200px]">
         <p class="mx-auto text-sm text-center">Made with Love Parsa Shafagh (PA_M0)
         </p>
+
         <div class="flex justify-between">
           <span class="mx-auto text-sm text-center text-blue-400">
             <a href="https://github.com/PA-M0"></a>github
@@ -125,6 +131,29 @@
 
 
 <script lang="ts" setup>
+
+import { supabase } from '@/plugins/supabase'
+const supabaseClient = useSupabaseClient()
+import { useSupabaseUser } from '@nuxtbase/auth-ui-vue';
+
+const { supabaseUser } = useSupabaseUser(supabase)
+console.log(supabaseUser.value)
+const loading = ref(true)
+
+async function signOut() {
+  try {
+   
+    loading.value = true
+    const { error } = await supabase.auth.signOut()
+    if (error) throw error
+    await navigateTo('/login')
+
+  } catch (error) {
+    alert(error)
+  } finally {
+    loading.value = false
+  }
+}
 
 
 </script>
