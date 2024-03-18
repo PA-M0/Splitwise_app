@@ -27,3 +27,7 @@
         </template>
     </div>
 </template>
+
+<script setup>
+navigateTo('/dashboard')
+</script>

@@ -18,149 +18,153 @@
 
 
 
+      
+          <v-dialog max-width="450">
+            <template v-slot:activator="{ props: activatorProps }">
+              <v-btn v-bind="activatorProps" elevation="0" class="text-purple-darken-2 text-center text-none"
+                variant="text" text="Get SplitWise Pro!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" class="inline-block ">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#DEC9F1" d="M9.017 0v5.724h9.018L14.73 0z" />
+                    <path fill="#D0B3EB" d="M3.305 0L0 5.724h9.018V0z" />
+                    <path fill="#4A276D" d="M9.017 5.724v15.619l9.018-15.62z" />
+                    <path fill="#8F4ED3" d="M0 5.724l9.017 15.619V5.723z" />
+                  </g>
+                </svg> Get SplitWise Pro!</v-btn>
+            </template>
 
-        <v-dialog max-width="450">
-          <template v-slot:activator="{ props: activatorProps }">
-
-            <v-btn v-bind="activatorProps" elevation="0" class="text-purple-darken-2 text-center text-none"
-              variant="text" text="Get SplitWise Pro!">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" class="inline-block ">
-                <g fill="none" fill-rule="evenodd">
-                  <path fill="#DEC9F1" d="M9.017 0v5.724h9.018L14.73 0z" />
-                  <path fill="#D0B3EB" d="M3.305 0L0 5.724h9.018V0z" />
-                  <path fill="#4A276D" d="M9.017 5.724v15.619l9.018-15.62z" />
-                  <path fill="#8F4ED3" d="M0 5.724l9.017 15.619V5.723z" />
-                </g>
-              </svg> Get SplitWise Pro!</v-btn>
-          </template>
-
-          <template v-slot:default="{ isActive }">
-            <v-card title="Splitwise Pro" class="bg-purple-darken-2 text-center m">
-
-
-              <v-card-text class="bg-purple-darken-3 text-center mt-1">
-                <p class="text-left">Upgrade to</p>
-                <h1 class="text-left text-2xl"><span class="font-black	">Splitwise</span> Pro
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" class="inline-block ">
-                    <g fill="none" fill-rule="evenodd">
-                      <path fill="#DEC9F1" d="M9.017 0v5.724h9.018L14.73 0z" />
-                      <path fill="#D0B3EB" d="M3.305 0L0 5.724h9.018V0z" />
-                      <path fill="#4A276D" d="M9.017 5.724v15.619l9.018-15.62z" />
-                      <path fill="#8F4ED3" d="M0 5.724l9.017 15.619V5.723z" />
-                    </g>
-                  </svg>
-                </h1>
+            <template v-slot:default="{ isActive }">
+              <v-card title="Splitwise Pro" class="bg-purple-darken-2 text-center m" >
 
 
-                <ul class="max-w-md space-y-1 text-sm ml-5 mt-3 text-gray-300 list-inside dark:text-gray-400">
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                <v-card-text class="bg-purple-darken-3 text-center mt-1"style="background-image: url('https://assets.splitwise.com/assets/core/facets.png');" >
+                  <p class="text-left">Upgrade to</p>
+                  <h1 class="text-left text-2xl"><span class="font-black	">Splitwise</span> Pro
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" class="inline-block ">
+                      <g fill="none" fill-rule="evenodd">
+                        <path fill="#DEC9F1" d="M9.017 0v5.724h9.018L14.73 0z" />
+                        <path fill="#D0B3EB" d="M3.305 0L0 5.724h9.018V0z" />
+                        <path fill="#4A276D" d="M9.017 5.724v15.619l9.018-15.62z" />
+                        <path fill="#8F4ED3" d="M0 5.724l9.017 15.619V5.723z" />
+                      </g>
+                    </svg>
+                  </h1>
+
+
+                  <ul class="max-w-md space-y-1 text-sm ml-5 mt-3 text-gray-300 list-inside dark:text-gray-400">
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Unlimited expenses
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Currency conversion
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Attach images and PDFs
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Receipt scanning
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Itemization
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Charts and graphs
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50   dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Expense search
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      Save default splits
+                    </li>
+                    <li class="flex items-center">
+                      <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                      </svg>
+                      PLus more goodies to come!
+                    </li>
+                  </ul>
+                  <br>
+                  <v-btn href="https://www.splitwise.com/subscriptions/new" variant="outlined"
+                    class="text-none flex flex-row justify-between " size="large" block>
+                    <span class="mr-5">Monthly </span>
+                    <span>$4.99</span>
+                  </v-btn>
+
+                  <v-btn href="https://www.splitwise.com/subscriptions/new" variant="outlined"
+                    class="text-none mt-3 bg-purple-500  flex flex-row justify-between " size="x-large" block>
+                    <svg class="w-4 h-4 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                       <path
                         d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                     </svg>
-                    Unlimited expenses
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Currency conversion
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Attach images and PDFs
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Receipt scanning
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Itemization
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Charts and graphs
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50   dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Expense search
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50  dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    Save default splits
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-3.5 h-3.5 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                    </svg>
-                    PLus more goodies to come!
-                  </li>
-                </ul>
-                <br>
-                <v-btn href="https://www.splitwise.com/subscriptions/new" variant="outlined" class="text-none flex flex-row justify-between " size="large" block>
-                  <span class="mr-5">Monthly </span>
-                  <span>$4.99</span>
-                </v-btn>
+                    <span class="mr-5 ">Yearly </span>
+                    <span>$39.99</span>
+                  </v-btn>
+                  <br>
 
-                <v-btn href="https://www.splitwise.com/subscriptions/new" variant="outlined" class="text-none mt-3 bg-purple-500  flex flex-row justify-between "
-                  size="x-large" block>
-                  <svg class="w-4 h-4 me-2 text-gray-50 dark:text-green-400 flex-shrink-0" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
-                  </svg>
-                  <span class="mr-5 ">Yearly </span>
-                  <span>$39.99</span>
-                </v-btn>
-                <br>
+                  <v-btn href="https://www.splitwise.com/subscriptions/new"
+                    class="text-none bg-green-600 flex flex-row justify-between " color="orange-darken-2" block>
+                    <span>Get Splitwise Pro </span>
 
-                <v-btn href="https://www.splitwise.com/subscriptions/new" class="text-none bg-green-600 flex flex-row justify-between " color="orange-darken-2" block>
-                  <span>Get Splitwise Pro </span>
+                  </v-btn>
+                  <p class="text-gray-300 text-sm p-2 text-left mt-3"><b>Recurring billing, cancel anytime.</b> Your
+                    subscription will be charged to your credit or debit card,
+                    and auto-renews unless disabled 24 hours before the end of the bill cycle. You can manage your
+                    subscription from your Account Settings page.</p>
+                </v-card-text>
 
-                </v-btn>
-                <p class="text-gray-300 text-sm p-2 text-left mt-3"><b>Recurring billing, cancel anytime.</b> Your subscription will be charged to your credit or debit card,
-                  and auto-renews unless disabled 24 hours before the end of the bill cycle. You can manage your
-                  subscription from your Account Settings page.</p>
-              </v-card-text>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
 
-              <v-card-actions>
-                <v-spacer></v-spacer>
+                  <v-btn text="Close" variant="text" class="text-none " @click="isActive.value = false"></v-btn>
+                </v-card-actions>
+              </v-card>
+            </template>
+          </v-dialog>
+  
 
-                <v-btn text="Close" variant="text" class="text-none " @click="isActive.value = false"></v-btn>
-              </v-card-actions>
-            </v-card>
-          </template>
-        </v-dialog>
 
 
 
@@ -178,10 +182,8 @@
 
     <div
       class="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-      <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Wellcome to SplitWise app</h5>
-      <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quas in voluptatibus esse alias facilis perspiciatis quo beatae ratione illo molestias, ut
-        necessitatibus eos tenetur impedit repellendus reiciendis ab! Ipsa, natus?</p>
+      <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white p-3">Wellcome to SplitWise app</h5>
+     
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a href="#"
           class="w-full sm:w-auto bg-mygreenH hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
@@ -193,7 +195,7 @@
           </svg>
           <div class="text-left rtl:text-right">
             <div class="mb-1 text-xs">Download on the</div>
-            <div class="mt-1 font-sans text-sm font-semibold">Mac App Store</div>
+            <div href="https://apps.apple.com/us/app/splitwise/id458023433" class="mt-1 font-sans text-sm font-semibold">Mac App Store</div>
           </div>
         </a>
         <a href="#"
@@ -206,7 +208,7 @@
           </svg>
           <div class="text-left rtl:text-right">
             <div class="mb-1 text-xs">Get in on</div>
-            <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+            <div href="https://play.google.com/store/apps/details?id=com.Splitwise.SplitwiseMobile" class="mt-1 font-sans text-sm font-semibold">Google Play</div>
           </div>
         </a>
       </div>
@@ -215,19 +217,19 @@
       <h2 class="font-medium text- py-3">settings</h2>
       <div class="flex items-center p-2 gap-4">
 
-        <img class="w-24 h-24 rounded-full" v-if="!updated" :src="avatar_path" alt="user-image">
-        <div v-else></div>
+        <img class="w-24 h-24 rounded-full border" v-show="updated" :src="avatar_path" alt="user-image">
+       
         <Avatar v-model:path="avatar_path" @upload="updateProfile()" />
         <div class="font-normal ">
           <div>{{ user?.user_metadata.full_name }}</div>
-          <div class="text-sm text-gray-500 dark:text-gray-400">{{ user?.user_metadata.preferred_username }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400"><b>{{ user?.user_metadata.preferred_username }}</b></div>
 
-          <div class="text-sm text-gray-500 dark:text-gray-400">{{ user.email }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">{{ user.email }}<b></b></div>
 
           <div class="text-sm text-mygreenH  cursor-pointer "><b class="text-gray-500">role : </b>{{ user.role }}</div>
 
           <div class="text-sm text-gray-800 dark:text-gray-800"><span class="text-gray-500">sign up with </span> {{
-            user?.app_metadata.provider }}</div>
+              user?.app_metadata.provider }}</div>
 
         </div>
       </div>
@@ -262,7 +264,7 @@
               <path fill="#8F4ED3" d="M0 5.724l9.017 15.619V5.723z" />
             </g>
           </svg>
-          <span class="grow">Splitwise Pro</span>
+          <nuxt-link to="/splitwisePro" class="grow">Splitwise Pro</nuxt-link>
 
 
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -401,7 +403,7 @@ async function updateProfile() {
   try {
     loading.value = true
     const user = useSupabaseUser()
-    updated = true
+    
     const updates = {
       id: user.value.id,
       username: username.value,
