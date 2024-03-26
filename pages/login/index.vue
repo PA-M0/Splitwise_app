@@ -144,7 +144,14 @@
 import { supabase } from '@/plugins/supabase'
 
 const supabaseClient = useSupabaseClient()
+const user = useSupabaseUser()
+const router = useRouter()
 
+watchEffect(()=>{
+  if(user.value){
+    router.push('/about')
+  }
+})
 
 const signUpWithGITHUB = async () => {
   try{
@@ -153,9 +160,7 @@ const signUpWithGITHUB = async () => {
       provider: 'github'  ,
     
      })
-     if(data){
-       navigateTo({ path: '/dashboard' })
-     }
+   
   }catch(error){
     alert("sorry, something went wrong")
   }
@@ -180,7 +185,7 @@ const { data, error } = await supabase.auth.signInWithOAuth({
 }
 
 
-const { supabaseUser } = useSupabaseUser(supabaseClient)
+// const { supabaseUser } = useSupabaseUser(supabaseClient)
 
 
 

@@ -58,7 +58,7 @@
  
  
 <div>
-  <Friend_list />
+  <!-- <Friend_list /> -->
 </div>
 
  <br><br><br><br><br><br><br><br><br><br><br><br>

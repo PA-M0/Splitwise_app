@@ -10,7 +10,7 @@ const props = defineProps({
   },
   height: {
     type: Number,
-    default: 3,
+    default: 4.5,
   },
 });
 // Options & Data

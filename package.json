@@ -44,6 +44,7 @@
     "flowbite": "^2.3.0",
     "next-auth": "4.22.5",
     "pinia": "^2.1.7",
+    "qrcode.vue": "^3.4.1",
     "sass": "^1.70.0",
     "social-login-buttons": "^0.0.4"
   },
