@@ -26,22 +26,20 @@
     </div>
 
 
-    <v-row justify="end">
+    <FriendList />
+  
+
+    <v-row justify="end" class="mt-2">
         <v-dialog v-model="dialog" persistent max-width="450">
             <template v-slot:activator="{ props }">
-                <v-btn style="background-color:#2459D8; color:white; border-radius:9px; font-size:12px;" v-bind="props">
-                    Add more friends
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15"
-                        viewBox="0,0,256,256">
-                        <g fill="#ffffff" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <g transform="scale(10.66667,10.66667)">
-                                <path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path>
-                            </g>
-                        </g>
+                <v-btn class="text-none m-auto" size="large" variant="outline" style="border: #309178 solid 2px;border-color: #309178; color:#20543F; border-radius:5px; font-size:12px;" v-bind="props">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-5 h-5 inline-block mr-1 text-mygreenH">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
                     </svg>
+                    <span class="font-bold text-mygreenH"><b>Add more friends</b></span>
+                   
                 </v-btn>
             </template>
             <v-card class="max-w-md">
@@ -139,13 +137,7 @@
         <div>
 
         </div>
-        <div>
-            <FriendList />
 
-         
-            
-
-        </div>
     </section>
 
     <div class="container">
@@ -296,7 +288,6 @@ export default {
                 const friendsStore = useFriendsStore();
                 friendsStore.addFriend(cardInfo);
                 this.frienList = friendsStore.getFriends
-                console.log('Friendsdd Store:', friendsStore.getFriends);
 
                 console.log(this.friend_avatar_url)
             } catch (error) {

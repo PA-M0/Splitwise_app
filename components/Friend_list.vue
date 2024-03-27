@@ -6,13 +6,15 @@
             <div class="flex items-center justify-between mb-4">
                 <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">My Friends</h5>
                 <nuxt-link @click="openPopUp()"
-                    class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                    class="text-sm font-medium text-green-600 hover:underline dark:text-green-500">
                  
-                  
+                  View
                 </nuxt-link>
 
 
             </div>
+            
+            <div >Nothing to found</div>
             <div class="flow-root" v-for="(data, index) in friends" :key="index" >
                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                     <li class="py-3 sm:py-4">
@@ -44,40 +46,34 @@
 
    
 </template>
-  
-<script>
+
+
+
+<script setup>
 import { useFriendsStore } from '~/store/friends';
 
-export default {
-    data() {
-        return {
-            alret: false,
-            friendddd:[],
-            showFriend:false,
-        }
-    },
-    computed: {
-        friends() {
-            const friendsStore = useFriendsStore();
-            this.friendddd = friendsStore.getFriends
-            console.log('Friendsdd Store:', friendsStore.getFriends.length);
-            return friendsStore.getFriends;
-        },
+// Access the store
+const friendsStore = useFriendsStore();
 
-    },
-    methods: {
-        openPopUp() {
-            this.alert = true;
-          
-            
-        }
-    },
-    mounted(){
-        if(friendsStore.getFriends.length > 0){
-            this.showFriend = true
-        }
-        
-    }
-};
+// Define reactive variables using ref()
+const alert = ref(false);
+const friendddd = ref([]);
+const showFriend = ref(false);
+
+// Define a computed property to retrieve friends from the store
+const friends = computed(() => {
+  friendddd.value = friendsStore.getFriends;
+  
+  // Check if there are friends and toggle showFriend accordingly
+  if (friendsStore.getFriends.length > 0) {
+    showFriend.value = true;
+  }
+
+  return friendsStore.getFriends;
+});
 </script>
+
+
+  
+
   
