@@ -9,10 +9,12 @@
 
         <form>
           <button type="submit" class="p-1.5 ">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
+
             <span class="sr-only">
               Search</span>
           </button>
@@ -176,9 +178,9 @@
     </nav>
   </header>
   <div class="container">
-    <div style="border-style: solid;border-radius: 5px; border-width: 1px; background-color: #ededee;">
-      <h1 style="font-size: 24px;" class=" p-3 text-dark">
-        <img src="../assets/images/user.png" alt="" class="m-1" style="display: inline-block;" width="20">Account
+    <div class="bg-gray-100" style="border-style: solid; border-width: 1px; ">
+      <h1 style="font-size: 20px;" class=" p-1 text-gray-800">
+        <img src="../assets/images/user.png" alt="" class="" style="display: inline-block;" width="20">Account
       </h1>
 
     </div>
@@ -257,14 +259,15 @@
           <div class="text-sm text-gray-800 dark:text-gray-800"><span class="text-gray-500">sign up with </span> {{
             user?.app_metadata.provider }}</div>
 
-          <div v-if="phone_number" class="text-sm text-gray-800 dark:text-gray-800"><span class="text-gray-500"><b>Phone:</b> </span> {{ user?.phone_number }}</div>
-          <div v-else class="text-sm text-gray-800 dark:text-red-700" style="color: #b91c1c"><span class="text-gray-500"><b>Phone:</b> </span> 
+          <div v-if="phone_number" class="text-sm text-gray-800 dark:text-gray-800"><span
+              class="text-gray-500"><b>Phone:</b> </span> {{ user?.phone_number }}</div>
+          <div v-else class="text-sm text-gray-800 dark:text-red-700" style="color: #b91c1c"><span
+              class="text-gray-500"><b>Phone:</b> </span>
             not set up </div>
-      
+
 
         </div>
-      </div
-      <hr>
+      </div <hr>
       <div class="grid grid-cols-1 p-1 divide-y">
 
         <div class="p-3 text-base flex  cursor-pointer">
