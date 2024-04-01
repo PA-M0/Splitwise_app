@@ -26,10 +26,10 @@ you can choose Google Auth or github for login, even you can log in just with yo
 
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/a8965477-0e55-494c-acac-d80d31e802d3">
 
+<img width="300px" src="Screenshot from 2024-04-02 02-32-19](https://github.com/PA-M0/Splitwise_app/assets/108547105/83b62baa-46e4-49dc-a53f-ca7544853cdf">
 
-<img width="300px" src="./Screenshots/googleAuth.png">![Screenshot from 2024-04-01 18-09-05](https://github.com/PA-M0/Splitwise_app/assets/108547105/9a3215b2-bf83-41cb-8078-6ef56f43f7c9)
 
-<img width="300px" src="./Screenshots/githubAuth.png">![Screenshot from 2024-04-02 02-32-19](https://github.com/PA-M0/Splitwise_app/assets/108547105/83b62baa-46e4-49dc-a53f-ca7544853cdf)
+<img width="300px" src="Screenshot from 2024-04-01 18-09-05](https://github.com/PA-M0/Splitwise_app/assets/108547105/9a3215b2-bf83-41cb-8078-6ef56f43f7c9">
 
 
 
