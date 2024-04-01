@@ -37,7 +37,7 @@ even you access to Splitwise Pro! and try to buy it you can rate it and contact.
 <br> 
 dashboard ui is exactly like Splitwise ios app.
 
-<img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/09400225-ea43-4fe9-ad9a-e8fec4d7c0ec">
+<img width="300px" style="margin:1px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/09400225-ea43-4fe9-ad9a-e8fec4d7c0ec">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/4c2d7ebd-8de8-49ea-b84b-106711d84344">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/32b51eb3-89e2-40ec-b66c-4dadb7989312">
 
