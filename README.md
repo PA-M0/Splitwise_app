@@ -1,9 +1,17 @@
 
+# Splitwise app 
+it created exactly like Splitwise app on ios ui based on Web platform
+## introduction
+A bill spliting application, uses a greedy algorithm to give the min number of transactions to resolve the expenses, also reduces the complexity.
+This will help you not to get confused about your money.
+the application uses Vue.js and Nuxt.js ui freamwork for front-End 
+<a href="https://supabase.com/">Supabase</a> has been used for the database and Authentication. <a href="">read docs supabase
+<a href="https://supabase.com/docs/guides/getting-started/quickstarts/nuxtjs">use supabase with Nuxt Js </a>
+# what is Splitwise? 
+Splitwise is a Providence, RI-based company that makes it easy to split bills with friends and family. We organize all your shared expenses and IOUs in one place, so that everyone can see who they owe. Whether you are sharing a ski vacation, splitting rent with roommates, or paying someone back for lunch, Splitwise makes life easier. We store your data in the cloud so that you can access it anywhere: on iPhone, Android, or on your computer. <a href="https://www.splitwise.com/about"> for more </a>
+
 # Nuxt 3 Minimal Starter
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-# Splitwise app 
-## introduction
 
 ## Setup
 
