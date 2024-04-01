@@ -29,6 +29,15 @@ you can choose Google Auth or github for login, even you can log in just with yo
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/83b62baa-46e4-49dc-a53f-ca7544853cdf">
 <br>
 
+## dashboard 
+there is you access to all the information about your user account such as your Email, fullname, usernam, phone number, role and more. <br>
+ou can also view the account photo and even update it with the desired photo.
+<br>
+even you access to Splitwise Pro! and try to buy it you can rate it and contact.
+<br> 
+dashboard ui is exactly like Splitwise ios app.
+
+<img width="300px" src="[https://github.com/PA-M0/Splitwise_app/assets/108547105/83b62baa-46e4-49dc-a53f-ca7544853cdf](https://github.com/PA-M0/Splitwise_app/assets/108547105/1e08f415-f891-4eb2-b1f0-927478f63ec3)">
 
 
 
