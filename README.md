@@ -24,7 +24,8 @@ Splitwise is a Providence, RI-based company that makes it easy to split bills wi
 ##  Auth
 you can choose Google Auth or github for login, even you can log in just with your email with magic link (you need to enter your email then the app will send you an email to confirm then redirect to the app by clicking link)
 
-<img width="300px" src="./Screenshots/login.png">![Screenshot from 2024-04-01 18-08-35](https://github.com/PA-M0/Splitwise_app/assets/108547105/a8965477-0e55-494c-acac-d80d31e802d3)
+<img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/a8965477-0e55-494c-acac-d80d31e802d3">
+
 
 <img width="300px" src="./Screenshots/googleAuth.png">![Screenshot from 2024-04-01 18-09-05](https://github.com/PA-M0/Splitwise_app/assets/108547105/9a3215b2-bf83-41cb-8078-6ef56f43f7c9)
 
