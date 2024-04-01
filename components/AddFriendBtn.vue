@@ -46,7 +46,7 @@
             </template>
             <v-card class="max-w-md">
                 <v-card-title class="text-center ">
-                    <v-btn style="color:#309178" class="text-none mr-5  text-sm" variant="text" @click="dialog = false">
+                    <v-btn style="color:#309178" class="text-none mr-5 text-sm" variant="text" @click="dialog = false">
                         Cancel
                     </v-btn>
 
@@ -137,7 +137,7 @@
                                                                     </svg>
 
                                                                 </div>
-                                                                <input type="tel" v-model="formData.phone" id="phone"
+                                                                <input type="tel" v-model="formData.phone" id="phone" disabled
                                                                     class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                                     placeholder="09123456789" required>
                                                             </div>
@@ -146,15 +146,16 @@
                                                         </div>
 
 
-                                                        <button type="submit"
+                                                        <button type="submit" disabled
                                                             class="text-white bg-mygreen hover:bg-mygreenH focus:ring-4 focus:outline-none focus:ring-teal-darken-2 font-medium rounded-lg text-sm  px-5 py-2.5  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-
+                                                            <p class="pt-1">this feature is not available yet.</p>
                                                         <p id="helper-text-explanation"
                                                             class="mt-2 text-xs text-gray-500 dark:text-gray-400">We’ll
                                                             never share
                                                             your details. Read our <a href="#"
                                                                 class="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy
                                                                 Policy</a>.</p>
+                                                                
                                                     </form>
                                                 </v-col>
 
@@ -241,37 +242,6 @@ export default {
         this.showFriendCard()
     },
     methods: {
-        async submitForm() {
-            try {
-                this.showToast = false;
-                // Access form data here
-
-                this.isLoading = true
-                const response = await axios.post('https://httpbin.org/post', this.formData);
-
-                this.isLoading = false
-
-
-                let validRes = true;
-                if (validRes) {
-                    const newUserData = response.data;
-
-                    this.userData.push(newUserData)
-                    // friendsStore.addFriend(newUserData);
-                    useFriendsStore().addFriend(newUserData);
-                    // console.log(useFriendsStore().getFriends)
-                    this.friendsList = useFriendsStore().getFriends;
-
-                    this.formData.email = '';
-                    this.formData.phone = '';
-                } else {
-                    this.showToast = true;
-                }
-
-            } catch (error) {
-                console.error('Error submitting form:', error);
-            }
-        },
         closeToast() {
             this.showToast = false;
         },
@@ -320,6 +290,7 @@ export default {
                 alert("User not found, please invite your friend first.")
             }
         },
+        //getting friend information data from db and show it as friend in the list 
         async showFriendCard(targetFriendId) {
             try {
                 let { data: cardInfo, error } = await supabase
@@ -338,6 +309,7 @@ export default {
                 friendsStore.addFriend(cardInfo);
                 this.frienList = friendsStore.getFriends
 
+                alert('Friend is added')
                 console.log(this.friend_avatar_url)
             } catch (error) {
                 console.log(error)

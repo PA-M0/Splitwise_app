@@ -15,7 +15,7 @@
             </div>
             
             <div >Nothing to found</div>
-            <div class="flow-root" v-for="(data, index) in friends" :key="index" >
+            <div  class="flow-root" v-for="(data, index) in friends" :key="index" >
                 <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                     <li class="py-3 sm:py-4">
                             <div class="flex items-center">
@@ -58,7 +58,9 @@ const friendsStore = useFriendsStore();
 // Define reactive variables using ref()
 const alert = ref(false);
 const friendddd = ref([]);
-const showFriend = ref(false);
+let showFriend = ref(false);
+let emptyList = false;
+
 
 // Define a computed property to retrieve friends from the store
 const friends = computed(() => {
