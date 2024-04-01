@@ -21,7 +21,7 @@ Splitwise is a Providence, RI-based company that makes it easy to split bills wi
 <a href="https://axios-http.com/">axios api</a><br>
 <a href="https://pinia.vuejs.org/">pinia store</a><br>
 
-##  Auth
+###  Auth
 you can choose Google Auth or github for login, even you can log in just with your email with magic link (you need to enter your email then the app will send you an email to confirm then redirect to the app by clicking link)
 
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/a8965477-0e55-494c-acac-d80d31e802d3">
@@ -29,7 +29,7 @@ you can choose Google Auth or github for login, even you can log in just with yo
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/83b62baa-46e4-49dc-a53f-ca7544853cdf">
 <br>
 
-## dashboard 
+### dashboard 
 there is you access to all the information about your user account such as your Email, fullname, usernam, phone number, role and more. <br>
 ou can also view the account photo and even update it with the desired photo.
 <br>
@@ -40,6 +40,10 @@ dashboard ui is exactly like Splitwise ios app.
 <img width="300px" style="margin:1px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/09400225-ea43-4fe9-ad9a-e8fec4d7c0ec">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/4c2d7ebd-8de8-49ea-b84b-106711d84344">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/32b51eb3-89e2-40ec-b66c-4dadb7989312">
+
+### about
+<img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/31ac80da-2d0a-461d-9234-bf477298ef81">
+<img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/c2a30fab-1090-4e4e-a56a-48ac0629b2a3">
 
 
 ## Nuxt 3 Minimal Starter
@@ -79,40 +83,6 @@ yarn dev
 
 # bun
 bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
