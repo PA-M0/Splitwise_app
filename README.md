@@ -44,6 +44,8 @@ dashboard ui is exactly like Splitwise ios app.
 ### about
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/31ac80da-2d0a-461d-9234-bf477298ef81">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/c2a30fab-1090-4e4e-a56a-48ac0629b2a3">
+### friends
+<img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/a46fe1c8-1910-4e82-9262-667c103d0199">
 
 
 ## Nuxt 3 Minimal Starter
