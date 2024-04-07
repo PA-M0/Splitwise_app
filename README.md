@@ -13,13 +13,13 @@ the application uses Type-Script, Nuxt.js freamwork ui and tailwind for front of
 ## what is Splitwise? 
 Splitwise is a Providence, RI-based company that makes it easy to split bills with friends and family. We organize all your shared expenses and IOUs in one place, so that everyone can see who they owe. Whether you are sharing a ski vacation, splitting rent with roommates, or paying someone back for lunch, Splitwise makes life easier. We store your data in the cloud so that you can access it anywhere: on iPhone, Android, or on your computer. <a href="https://www.splitwise.com/about"> for more </a>
 ## Technologies + Tools used
-<a href="https://nuxt.com/">Nuxt Js</a><br>
-<a href="https://www.typescriptlang.org/">TypeScript</a><br>
-<a href="https://supabase.com">Supabase</a><br>
-<a href="https://tailwindcss.com/">TailwindCSS</a><br>
-<a href="https://heroicons.com/">heroicons</a><br>
-<a href="https://axios-http.com/">axios api</a><br>
-<a href="https://pinia.vuejs.org/">pinia store</a><br>
+•<a href="https://nuxt.com/">Nuxt Js</a><br>
+•<a href="https://www.typescriptlang.org/">TypeScript</a><br>
+•<a href="https://supabase.com">Supabase</a><br>
+•<a href="https://tailwindcss.com/">TailwindCSS</a><br>
+•<a href="https://heroicons.com/">heroicons</a><br>
+•<a href="https://axios-http.com/">axios api</a><br>
+•<a href="https://pinia.vuejs.org/">pinia store</a><br>
 
 ###  Auth
 you can choose Google Auth or github for login, even you can log in just with your email with magic link (you need to enter your email then the app will send you an email to confirm then redirect to the app by clicking link)
@@ -44,6 +44,7 @@ dashboard ui is exactly like Splitwise ios app.
 ### about
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/31ac80da-2d0a-461d-9234-bf477298ef81">
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/c2a30fab-1090-4e4e-a56a-48ac0629b2a3">
+
 ### friends
 <img width="300px" src="https://github.com/PA-M0/Splitwise_app/assets/108547105/a46fe1c8-1910-4e82-9262-667c103d0199">
 
